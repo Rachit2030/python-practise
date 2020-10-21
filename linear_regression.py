@@ -50,9 +50,4 @@ plt.savefig("line.png")
 plt.show()
 plt.scatter(x_test,y_predicted)
 plt.savefig("abc.png")
-<<<<<<< HEAD
 plt.show()
-print("abc")
-=======
-plt.show()
->>>>>>> 5191c3d9c89a5bc1175a2818339eff315144233f
