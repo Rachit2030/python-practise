@@ -11,3 +11,5 @@ print(features_array.shape)
 for i in range(rows):
     features_array[i]=(1,x[i])
 print(features_array)
+for i in range(rows):
+    for j in range(columns):
