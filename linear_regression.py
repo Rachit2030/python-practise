@@ -46,6 +46,8 @@ y_rms = math.sqrt(y_rms)
 print(y_rms)
 
 plt.plot(x_test,y_predicted)
+plt.show()
+plt.savefig("line.png")
 plt.scatter(x_test,y_predicted)
 plt.savefig("abc.png")
 plt.show()
