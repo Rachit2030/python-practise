@@ -35,12 +35,17 @@ print(x_transpose_mul_y.shape)
 # multiplying inverse(X transpose * X) with X transpose * Y
 multiply_both=np.matmul(x_transpose_mul_x,x_transpose_mul_y)
 print(multiply_both)
-y_predicted = np.empty((rows,1))
+y_predicted = np.empty((rows_test,1))
 y_error = np.empty((rows,1))
 y_rms=0
 for i in range(rows_test):
     y_predicted[i] = multiply_both[0] + multiply_both[1]*x_test[i]
-    y_error = ((y_test[i]-y_predicted[i])**2)*0.5
+    y_error = ((y_test[i]-y_predicted[i])*0.5)**2
     y_rms = y_rms + y_error
 y_rms = math.sqrt(y_rms)
 print(y_rms)
+
+plt.plot(x_test,y_predicted)
+plt.scatter(x_test,y_predicted)
+plt.savefig("abc.png")
+plt.show()
