@@ -45,7 +45,7 @@ for i in range(rows_test):
 y_rms = math.sqrt(y_rms)
 print(y_rms)
 
-plt.plot(x_test,y_predicted)
+plt.plot(x_test,y_predicted,"r-")
 plt.show()
 plt.savefig("line.png")
 plt.scatter(x_test,y_predicted)
