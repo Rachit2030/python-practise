@@ -29,7 +29,7 @@ x1_surf = np.array(np.meshgrid(np.linspace(data.x1.min(),data.x1.max(),100)))
 x2_surf = np.array(np.meshgrid(np.linspace(data.x2.min(),data.x2.max(),100)))
 print(x2_surf.shape)
 
-#fig = plt.figure
-#ax = fig.add_subplot(111,projection='3d')
-#ax.scatter(data.y,data.x2,data.x2,c='red',marker='o',alpha='0.5')
-#ax.plot_surface()
+# fig = plt.figure
+# ax = fig.add_subplot(111,projection='3d')
+# ax.scatter(data.y,data.x2,data.x2,c='red',marker='o',alpha='0.5')
+# ax.plot_surface()
